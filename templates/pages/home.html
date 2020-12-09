@@ -2,8 +2,20 @@
 
 {% block content %}
 <h1> Welcome! </h1> 
+<div id='tweets'>
+    Replace me
+</div>
 
 <script>
+const tweetsElement = document.getElementById("tweets")
+tweetsElement.innerHTML = 'loading...'
+
+var el1 = "<h1>Hi there1</h1>"
+var el2 = "<h1>Hi there2</h1>"
+var el3 = "<h1>Hi there3</h1>"
+
+tweetsElement.innerHTML = el1 + el2 + el3
+
 const xhr = new XMLHttpRequest()
 const method = 'GET'
 const url = '/tweets'
