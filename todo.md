@@ -14,6 +14,8 @@
         -> Text
         -> Messages
     -> Delete
+    -> Retweeting
+    -> Liking
 
 3. Following / followers
 
